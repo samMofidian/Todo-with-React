@@ -9,6 +9,13 @@ export default function App() {
   const [todos, setTodos] = useState([]);
   const [error, setError] = useState("");
 
+  const inputRef = useRef(null);
+
+  // focus on input field at first render(mount)
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   const inputTextChangeHandler = (e) => {
     const text = e.target.value;
     setInputText(text);
@@ -23,6 +30,7 @@ export default function App() {
   };
 
   const todoAddHandler = () => {
+    // empty str input
     if (inputText === "") {
       return;
     }
@@ -37,6 +45,7 @@ export default function App() {
     setInputText("");
   };
 
+  // prevent refreshing
   const formSubmitHandler = (e) => {
     e.preventDefault();
   };
@@ -64,6 +73,7 @@ export default function App() {
               onChange={inputTextChangeHandler}
               value={inputText}
               placeholder="Add your new todo"
+              ref={inputRef}
             />
             <button onClick={todoAddHandler}>
               <Plus />
