@@ -1,5 +1,7 @@
 # ReactJS Todo App
 
+![todo-app-img](https://user-images.githubusercontent.com/74531883/219973807-f3f24af9-2c2c-4c5f-9e98-f37d6acfdebc.jpg)
+
 ## Built With
 
 - [ReactJS](https://reactjs.org/)
