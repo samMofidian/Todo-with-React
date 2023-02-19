@@ -30,6 +30,9 @@ body {
   background-color: #fff;
   padding: 1em;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .app h1 {
@@ -70,4 +73,11 @@ body {
   color: #fff;
   font-size: 3rem;
   font-weight: 900;
+}
+
+.todo-footer button {
+  padding: 0.5em;
+  background-color: rgba(139, 76, 229, 255);
+  color: #fff;
+  font-size: 1.5rem;
 }
