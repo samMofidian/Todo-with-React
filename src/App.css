@@ -68,5 +68,6 @@ body {
   width: 12%;
   background-color: rgba(139, 76, 229, 255);
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 900;
 }
