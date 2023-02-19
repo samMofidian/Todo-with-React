@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #444;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+    rgba(126, 230, 205, 255),
+    rgba(86, 125, 230, 255)
+  );
+}
