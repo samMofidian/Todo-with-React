@@ -28,7 +28,7 @@ body {
   margin: auto;
   margin-top: 15em;
   background-color: #fff;
-  padding: 1em;
+  padding: 2.5em;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -52,6 +52,13 @@ body {
   border-radius: 4px;
 }
 
+.error-msg {
+  margin-top: 1em;
+  color: tomato;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 .todo-actions {
   display: flex;
   justify-content: space-between;
@@ -73,6 +80,14 @@ body {
   color: #fff;
   font-size: 3rem;
   font-weight: 900;
+}
+
+.todo-footer {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
 }
 
 .todo-footer button {

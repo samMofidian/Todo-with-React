@@ -1,0 +1,27 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+
+.todo-text {
+  font-size: 1.5rem;
+  background-color: #eee;
+  padding: 1em;
+  flex-grow: 2;
+}
+
+.todo:hover .delete-icon {
+  width: 50px;
+  opacity: 1;
+}
+
+.todo .delete-icon {
+  display: flex;
+  width: 0;
+  opacity: 0;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: tomato;
+  transition: opacity 1s ease, width 0.2s ease;
+}

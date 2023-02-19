@@ -1,0 +1,10 @@
+.todo-list:first-of-type {
+  margin-top: 1em;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: scroll;
+}
