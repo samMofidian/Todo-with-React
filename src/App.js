@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./App.css";
-import { Plus } from "react-bootstrap-icons";
 import TodoList from "./components/TodoList";
+// toast
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+// style
+import { Plus } from "react-bootstrap-icons";
+import "./App.css";
 
 export default function App() {
   // states
@@ -43,6 +47,17 @@ export default function App() {
     }
     setTodos((prev) => [...prev, { id: lastId, text: inputText }]);
     setInputText("");
+    // notify
+    toast.success("Added successfully!", {
+      position: "bottom-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
   };
 
   // prevent refreshing
@@ -78,6 +93,7 @@ export default function App() {
             <button onClick={todoAddHandler}>
               <Plus />
             </button>
+            <ToastContainer />
           </div>
           {error && <p className="error-msg">{error}</p>}
         </form>
