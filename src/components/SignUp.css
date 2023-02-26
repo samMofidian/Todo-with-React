@@ -6,6 +6,7 @@
   border-radius: 9px;
   background-color: #fff;
   padding: 4em;
+  border-top: 4px solid rgba(139, 76, 229, 255);
 }
 
 .sign-up-form {
@@ -28,6 +29,7 @@
   border-radius: 9px;
   font-size: 1.2rem;
   padding: 0.7em;
+  outline-color: rgba(139, 76, 229, 255);
 }
 
 .sign-up-form label select {
@@ -37,6 +39,7 @@
   border-radius: 9px;
   font-size: 1.2rem;
   padding: 0.7em;
+  outline-color: rgba(139, 76, 229, 255);
 }
 
 .sign-up-form div input {
@@ -48,6 +51,7 @@
   font-weight: 600;
   padding: 0.7em;
   cursor: pointer;
+  outline-color: rgba(139, 76, 229, 255);
 }
 
 .sign-up-form div {
