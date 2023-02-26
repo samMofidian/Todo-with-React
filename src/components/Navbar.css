@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4em 4.8em;
+  backdrop-filter: blur(10px);
+  background-color: rgba(237, 237, 237, 0.5);
+}
+
+.main-nav-list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 4.8em;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: rgba(139, 76, 229, 255);
+}
