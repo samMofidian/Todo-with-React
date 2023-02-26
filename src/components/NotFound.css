@@ -1,0 +1,17 @@
+.error-container {
+  margin-top: 7em;
+}
+
+.error-404 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20rem;
+  color: #222;
+}
+
+.error-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 7rem;
+  color: #222;
+}
