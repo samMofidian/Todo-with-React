@@ -7,12 +7,20 @@ import "react-toastify/dist/ReactToastify.css";
 // style
 import "./SignUp.css";
 
+// yup regex pattern
+const phoneRegex = new RegExp("^9[0-9]{9}$");
+
 // yup schema
 const validationSchema = yup.object().shape({
   firstName: yup.string().required("required").min(2).max(54),
   lastName: yup.string().required("required").min(2).max(54),
   province: yup.string().required("required").min(2).max(54),
-  phoneNumber: yup.string().required("required").min(10).max(11),
+  phoneNumber: yup
+    .string()
+    .required("required")
+    .min(10)
+    .max(10)
+    .matches(phoneRegex, "pattern isn't right"),
   gender: yup.string().required("required"),
   nationalId: yup.number().required("required"),
   email: yup.string().email(),
@@ -67,7 +75,11 @@ const SignUp = () => {
         </label>
         <label>
           <p>Phone Number</p>
-          <input {...register("phoneNumber")} type="text" />
+          <input
+            {...register("phoneNumber")}
+            type="text"
+            placeholder="9xxxxxxxxx"
+          />
         </label>
         <label>
           <p>Gender</p>
